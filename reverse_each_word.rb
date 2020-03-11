@@ -1,8 +1,11 @@
+require "pry"
+
 def reverse_each_word(phrase)
+phrase_in_array = phrase.split
 reversed_words = []
-phrase.split
-  phrase.each do |word|
-  reverse_each_word << word.reverse
+  phrase_in_array.each do |word|
+    reversed_words << word.reverse
   end
-  reversed_words
+output = reversed_words.join(" ")
+output
 end

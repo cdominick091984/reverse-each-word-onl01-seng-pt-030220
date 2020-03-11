@@ -2,10 +2,7 @@ require "pry"
 
 def reverse_each_word(phrase)
 phrase_in_array = phrase.split
-reversed_words = []
   phrase_in_array.collect do |word|
-    reversed_words << word.reverse
+    phrase_in_array << word.reverse
   end
-output1 = reversed_words.join(" ")
-output1
 end

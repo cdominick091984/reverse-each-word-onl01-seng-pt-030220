@@ -6,6 +6,12 @@ reversed_words = []
   phrase_in_array.each do |word|
     reversed_words << word.reverse
   end
-output = reversed_words.join(" ")
-output
+output1 = reversed_words.join(" ")
+output1
+
+  phrase_in_array.collect do |word|
+    phrase_in_array << word.reverse
+  end
+  output2 = phrase_in_array.join(" ")
+  output2
 end

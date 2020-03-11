@@ -5,5 +5,5 @@ phrase_in_array = phrase.split
   phrase_in_array.collect do |word|
     word.reverse
   end
-  binding.pry
+  phrase_in_array
 end
